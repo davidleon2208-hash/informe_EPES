@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-main: #7b2cb1;
+    --pink-accent: #e91e63;
+    --bg-light: #f4f7f6;
+    --card-1: #ef476f;
+    --card-2: #06d6a0;
+    --card-3: #9b5de5;
+    --card-4: #536dfe;
+    --card-5: #00c853;
+    --text: #333;
+    --muted: #666;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background: var(--bg-light);
+}
+
+/* Container Principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--bg-light);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: var(--purple-main);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero button {
+    background-color: var(--pink-accent);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+}
+.subtitle {
+    font-size: 1rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+/* Course Info */
+.course-info {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.period {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.badge {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid #c8e6c9;
+}
+
+/* Modules Grid */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 0 20px 40px 20px;
+}
+
+.module-card {
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    font-size: 0.8rem;
+    min-height: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.module-number {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.m1 { background-color: var(--card-1); }
+.m2 { background-color: var(--card-2); }
+.m3 { background-color: var(--card-3); }
+.m4 { background-color: var(--card-4); }
+.m5 { background-color: var(--card-5); }
+
+/* CTA Section */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.qr-placeholder {
+    width: 120px;
+    height: 120px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.btn-subscribe {
+    background-color: var(--purple-main);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(123, 44, 177, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-subscribe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(123, 44, 177, 0.5);
+}
+
+.instruction {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--purple-main);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .modules-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .course-info {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .cta-section {
+        padding: 30px 20px;
+    }
+}
+
