@@ -1,4 +1,4 @@
-# README - Cursos EPES (Educação Profissional Equidade em Saúde)
+# Cursos EPES (Educação Profissional Equidade em Saúde)
 
 ## 📖 Descrição
 Este é o repositório da landing page do curso **PET-Saúde: EQUIDADE UFPI-SESAPI**.
